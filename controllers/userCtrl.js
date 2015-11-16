@@ -3,8 +3,8 @@
 ///////////////
 var users = [
     {
-        name: 'Preston McNeil',
-        password: 'password1',
+        name: 'blake',
+        password: 'pass',
         friends: ['Lindsey Mayer', 'Terri Ruff']
     },
     {
@@ -28,14 +28,23 @@ var users = [
 module.exports = {
 
     login: function (req, res, next) {
+        console.log(req.body);
+        var userFound;
         for (var i = 0; i < users.length; i++) {
-            if (users[i].name === req.body.name && users[i].password === req.body.password) {
+            if (users[i].name === req.body.userName && users[i].password === req.body.password) {
+                console.log('here i am ');
                 req.session.currentUser = users[i];
-                res.send({ userFound: true });
+                userFound = true;
+                console.log(userFound);
+                break;
             } else {
-                res.send({ userFound: false });
+                userFound = false;
+                console.log(userFound);
             }
         }
+        var result = {userFound: userFound};
+        console.log(result);
+        res.send(result);
     }
 
 

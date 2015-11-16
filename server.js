@@ -21,6 +21,7 @@ app.post('/api/login', UserCtrl.login);
 
 app.get('/api/profiles', ProfileCtrl.getUserFriends);
 
+app.use(express.static(__dirname + '/public'));
 
 
 

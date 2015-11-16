@@ -1,9 +1,10 @@
 //////////////////
 //profileCtrl.js//
 //////////////////
+
 var profiles = [
     {
-        name: 'Preston McNeil',
+        name: 'blake',
         pic: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/1117694_1614542_108355616_q.jpg',
         status: 'Everything is bigger in Texas'
     },
