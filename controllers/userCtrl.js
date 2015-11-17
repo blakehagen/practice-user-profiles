@@ -15,12 +15,12 @@ var users = [
     {
         name: 'Terri Ruff',
         password: 'hunter2',
-        friends: ['Lindsey Mayer', 'Preston McNeil']
+        friends: ['Lindsey Mayer', 'blake']
     },
     {
         name: 'Lindsey Mayer',
         password: '777mittens777',
-        friends: ['Preston McNeil', 'Ryan Rasmussen', 'Terri Ruff']
+        friends: ['blake', 'Ryan Rasmussen', 'Terri Ruff']
     }
 ];
 
